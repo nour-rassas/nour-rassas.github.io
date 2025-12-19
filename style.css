@@ -1,0 +1,146 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+@keyframes fadeIn {
+   from{opacity: 0;}
+   to{opacity: 1;}
+}
+   
+@keyframes typewriter{
+    from { width: 0;}
+    to { width:100% ;}
+}
+@keyframes slideFromLeft{
+    0%{
+        transform: translateX(-200px);
+opacity: 0;
+
+        
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+ 
+body 
+{
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(120deg, #5b5bff, #7f9bff);
+color: #222;
+padding: 20px;
+line-height: 1.6;
+}
+.about-img-container {
+width: 120px;
+margin: 20px auto;
+}
+
+.about-img-container img {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+object-fit: cover;
+display: block;
+border: 3px solid white;
+animation: slideFromLeft 1.5s ease forwards;
+}
+.about-text{
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.header-img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+object-position: center;
+display: block;
+margin-bottom: 20px;
+border-radius: 10px;
+}
+
+header 
+{
+text-align: center;
+margin-bottom: 40px;
+}
+header p {
+color: #eaeaea;
+animation: fadeIn 2s ease forwards;
+animation-delay: 1s;
+}
+nav {
+margin-bottom: 30px 0;
+text-align: center;
+}
+nav a {
+
+margin: 0 15px;
+color: #ffb6c1;
+text-decoration: none;
+font-weight: bold;
+padding: 8px 15px;
+border-radius: 5px;
+transition: all 0.3 ease;
+background-color: rgba(255, 255, 255, 0.2);
+}
+nav a:hover {
+text-decoration: underline;
+background-color: #ffb6c1;
+color: white;
+transform: scale(1.1);
+}
+section {
+    
+padding: 25px;
+margin: 0  auto 30px auto;
+border-radius: 10px;
+max-width: 600px;
+}
+section h2 {
+   
+margin-bottom: 15px;
+color: #5b5bff;
+opacity: 0;
+ animation:slideInLeft 1.5s ease forwards ;
+}
+
+ul,ol {
+padding-left: 20px;
+margin: 0 auto 30px auto;
+max-width: 300px;
+}
+li{
+    margin-bottom: 8px;
+}
+form {
+max-width: 400px;
+}
+
+
+.typewriter {
+overflow: hidden;
+white-space: nowrap;
+border-right: 3px solid white;
+width: 0;
+animation: typewriter 3s steps(30) forwards ;
+font-weight: bold;
+color: #a9ba9d;
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+.header-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header-text p{
+    color: #222;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease forwards;
+}
